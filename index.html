@@ -4,22 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Giraffe Property Services - Professional maintenance for letting agents and homeowners in Wolverhampton & West Midlands.">
-    <title>Giraffe Property Services | Professional Property Maintenance</title>
+    <title>Giraffe Property Services | Elevating Standards</title>
     <script src="https://cdn.tailwindcss.com"></script>
     
     <style>
         html { scroll-behavior: smooth; }
         .giraffe-gradient { background: linear-gradient(135deg, #f39c12 0%, #d35400 100%); }
         .service-card:hover { border-color: #f39c12; transform: translateY(-2px); }
+        /* Ensuring the logo scales correctly */
+        .logo-img { height: 50px; width: auto; object-fit: contain; }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
 
     <nav class="fixed w-full z-50 bg-white shadow-sm border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-black tracking-tighter text-orange-600 uppercase">
-                GIRAFFE <span class="text-gray-800">PROPERTY</span>
-            </div>
+        <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-3">
+                <img src="logo.png" alt="GPS Logo" onerror="this.style.display='none'" class="logo-img">
+                <div class="flex flex-col">
+                    <span class="text-xl font-black tracking-tighter text-orange-600 uppercase leading-none">GIRAFFE <span class="text-gray-800">PROPERTY</span></span>
+                    <span class="text-[9px] font-bold tracking-[0.2em] text-gray-400 uppercase">Elevating Standards</span>
+                </div>
+            </a>
             <div class="hidden md:flex items-center space-x-8 font-bold text-xs uppercase tracking-widest">
                 <a href="#services" class="hover:text-orange-600 transition">Services</a>
                 <a href="#why-us" class="hover:text-orange-600 transition">Why Us</a>
@@ -76,9 +82,9 @@
     </section>
 
     <section id="why-us" class="py-24 px-6 bg-white">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-black uppercase text-center mb-16 tracking-tight">Why Choose Us</h2>
-            <div class="grid md:grid-cols-2 gap-x-16 gap-y-10">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-black uppercase mb-16 tracking-tight">Why Choose Us</h2>
+            <div class="grid md:grid-cols-2 gap-x-16 gap-y-10 text-left">
                 <div class="flex items-start space-x-4">
                     <span class="text-orange-600 text-2xl">✔</span>
                     <div>
