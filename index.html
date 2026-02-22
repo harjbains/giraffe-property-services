@@ -12,10 +12,29 @@
 
 <style>
 html { scroll-behavior: smooth; }
-.giraffe-gradient { background: linear-gradient(135deg, #f39c12 0%, #d35400 100%); }
-.service-card:hover { border-color: #f39c12; transform: translateY(-2px); }
-</style>
 
+:root {
+  --gps-orange: #f97316;
+}
+
+.gps-orange { color: var(--gps-orange); }
+.gps-bg-orange { background-color: var(--gps-orange); }
+
+.section-accent {
+  border-left: 6px solid var(--gps-orange);
+  padding-left: 16px;
+}
+
+.service-card {
+  transition: all 0.2s ease;
+}
+
+.service-card:hover {
+  border-color: var(--gps-orange);
+  background-color: #fff7ed;
+  transform: translateY(-3px);
+}
+</style>
 </head>
 
 <body class="bg-gray-50 text-gray-900 font-sans">
@@ -24,8 +43,8 @@ html { scroll-behavior: smooth; }
 <nav class="fixed w-full z-50 bg-white shadow-sm border-b border-gray-100">
 <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
 <div>
-<span class="text-xl font-black tracking-tight text-orange-600 uppercase">
-GIRAFFE PROPERTY SERVICES
+<span class="text-xl font-black tracking-tight uppercase">
+<span class="gps-orange">GIRAFFE</span> PROPERTY SERVICES
 </span>
 <p class="text-xs text-gray-500">Reliable • Tidy • Small Jobs Welcome</p>
 </div>
@@ -33,11 +52,11 @@ GIRAFFE PROPERTY SERVICES
 <div class="hidden md:flex items-center space-x-8 font-bold text-xs uppercase">
 <a href="#services">Services</a>
 <a href="#faq">FAQ</a>
-<a href="tel:07378868686" class="text-orange-600">07378 868686</a>
+<a href="tel:07378868686" class="gps-orange">07378 868686</a>
 </div>
 </div>
 
-<div class="md:hidden flex justify-center py-2 bg-orange-600">
+<div class="md:hidden flex justify-center py-2 gps-bg-orange">
 <a href="tel:07378868686" class="text-white font-bold text-sm">
 CALL 07378 868686
 </a>
@@ -48,11 +67,12 @@ CALL 07378 868686
 <header class="pt-32 pb-20 px-6 text-center bg-white">
 <div class="max-w-4xl mx-auto">
 
-<h1 class="text-4xl md:text-6xl font-black mb-6 uppercase">
-Handyman in Wolverhampton for Small Repairs & Odd Jobs
+<h1 class="text-4xl md:text-6xl font-black mb-6 uppercase leading-tight">
+Handyman in <span class="gps-orange">Wolverhampton</span><br>
+for Small Repairs & Odd Jobs
 </h1>
 
-<p class="text-lg md:text-xl text-gray-600 mb-8">
+<p class="text-lg md:text-xl text-gray-600 mb-6">
 Local handyman handling small repairs, plumbing jobs and general maintenance 
 across Wolverhampton, Walsall and Dudley.
 </p>
@@ -63,22 +83,22 @@ Small jobs welcome — no minimum spend.
 
 <a href="https://wa.me/447378868686?text=Hi%20I%20need%20a%20quote%20for%20a%20repair%20in%20Wolverhampton"
 target="_blank"
-class="bg-green-500 text-white px-10 py-4 rounded font-bold uppercase shadow-lg hover:bg-green-600 transition">
+class="bg-green-600 text-white px-10 py-4 rounded font-bold uppercase shadow-lg hover:bg-green-700 transition">
 WhatsApp for a Quick Quote
 </a>
 
 <p class="text-sm text-gray-500 mt-4">
-Prefer to call? 07378 868686
+Prefer to call? <span class="gps-orange font-semibold">07378 868686</span>
 </p>
 
 </div>
 </header>
 
 <!-- LOCAL SEO SECTION -->
-<section class="py-16 px-6 bg-gray-50">
+<section class="py-16 px-6 bg-orange-50">
 <div class="max-w-4xl mx-auto text-gray-700 leading-relaxed text-center">
 
-<h2 class="text-2xl font-black mb-6 uppercase">
+<h2 class="text-2xl font-black mb-6 uppercase section-accent">
 Small Home Repairs in Wolverhampton
 </h2>
 
@@ -102,31 +122,31 @@ We cover areas including Tettenhall, Penn, Wednesfield, Sedgley, Bilston and Blo
 <!-- SERVICES -->
 <section id="services" class="py-20 px-6 bg-white">
 <div class="max-w-6xl mx-auto">
-<h2 class="text-3xl font-black mb-12 text-center uppercase">
+<h2 class="text-3xl font-black mb-12 text-center uppercase section-accent">
 Common Odd Jobs We Handle
 </h2>
 
 <div class="grid md:grid-cols-3 gap-6 text-sm text-gray-700">
 
 <div class="service-card p-6 border rounded">
-✔ Fixing sticking doors  
-✔ Tap replacements  
-✔ Minor plumbing leaks  
-✔ Light fitting changes  
+✔ Fixing sticking doors<br>
+✔ Tap replacements<br>
+✔ Minor plumbing leaks<br>
+✔ Light fitting changes
 </div>
 
 <div class="service-card p-6 border rounded">
-✔ TV wall mounting  
-✔ Curtain rail fitting  
-✔ Flat-pack assembly  
-✔ Fence & gate repairs  
+✔ TV wall mounting<br>
+✔ Curtain rail fitting<br>
+✔ Flat-pack assembly<br>
+✔ Fence & gate repairs
 </div>
 
 <div class="service-card p-6 border rounded">
-✔ Wall patch repairs  
-✔ Painting touch-ups  
-✔ Landlord maintenance  
-✔ General small repairs  
+✔ Wall patch repairs<br>
+✔ Painting touch-ups<br>
+✔ Landlord maintenance<br>
+✔ General small repairs
 </div>
 
 </div>
@@ -134,37 +154,37 @@ Common Odd Jobs We Handle
 </section>
 
 <!-- FAQ -->
-<section id="faq" class="py-20 px-6 bg-gray-50">
+<section id="faq" class="py-20 px-6 bg-orange-50">
 <div class="max-w-4xl mx-auto">
 
-<h2 class="text-3xl font-black mb-12 text-center uppercase">
+<h2 class="text-3xl font-black mb-12 text-center uppercase section-accent">
 Frequently Asked Questions
 </h2>
 
 <div class="space-y-8 text-sm text-gray-700 leading-relaxed">
 
 <div>
-<h3 class="font-bold mb-2">Do you take on small jobs?</h3>
+<h3 class="font-bold mb-2 gps-orange">Do you take on small jobs?</h3>
 <p>Yes — small jobs are welcome. We specialise in minor repairs and odd jobs across Wolverhampton, Walsall and Dudley.</p>
 </div>
 
 <div>
-<h3 class="font-bold mb-2">What areas do you cover?</h3>
+<h3 class="font-bold mb-2 gps-orange">What areas do you cover?</h3>
 <p>We are based in Wolverhampton and cover approximately a 10 mile radius including Walsall, Dudley, Bilston and surrounding areas.</p>
 </div>
 
 <div>
-<h3 class="font-bold mb-2">How quickly can you attend?</h3>
+<h3 class="font-bold mb-2 gps-orange">How quickly can you attend?</h3>
 <p>Many small jobs can be scheduled within a few days. Message via WhatsApp for availability.</p>
 </div>
 
 <div>
-<h3 class="font-bold mb-2">Are you insured?</h3>
+<h3 class="font-bold mb-2 gps-orange">Are you insured?</h3>
 <p>Yes, we are fully insured for public liability.</p>
 </div>
 
 <div>
-<h3 class="font-bold mb-2">What is the best way to get a quote?</h3>
+<h3 class="font-bold mb-2 gps-orange">What is the best way to get a quote?</h3>
 <p>The fastest way is to send a WhatsApp message with photos and a brief description.</p>
 </div>
 
@@ -176,7 +196,7 @@ Frequently Asked Questions
 <section class="py-20 px-6 bg-gray-900 text-white text-center">
 <div class="max-w-3xl mx-auto">
 
-<h2 class="text-3xl font-black mb-6 uppercase">
+<h2 class="text-3xl font-black mb-6 uppercase section-accent">
 Get in Touch
 </h2>
 
@@ -189,7 +209,7 @@ Coverage: Wolverhampton, Walsall & Dudley (approx. 10 mile radius)
 </p>
 
 <p class="mb-2">
-Call: 07378 868686
+Call: <span class="gps-orange font-semibold">07378 868686</span>
 </p>
 
 <p>
@@ -199,14 +219,14 @@ Email: info@giraffepropertyservices.co.uk
 </div>
 </section>
 
-<footer class="py-8 bg-black text-center text-gray-500 text-xs">
+<footer class="py-8 gps-bg-orange text-center text-white text-xs">
 © 2026 Giraffe Property Services. All Rights Reserved.
 </footer>
 
 <!-- FLOATING WHATSAPP BUTTON -->
 <a href="https://wa.me/447378868686?text=Hi%20I%20need%20a%20quote%20for%20a%20repair"
 target="_blank"
-class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-full shadow-lg text-sm font-bold transition">
+class="fixed bottom-6 right-6 bg-green-600 hover:bg-green-700 text-white px-4 py-3 rounded-full shadow-lg text-sm font-bold transition">
 WhatsApp
 </a>
 
