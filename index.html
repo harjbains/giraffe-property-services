@@ -3,17 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Giraffe Property Services - Professional reactive and planned maintenance for letting agents in Wolverhampton.">
-    <title>Giraffe Property Services | Agent & Landlord Maintenance</title>
+    <meta name="description" content="Giraffe Property Services - Reliable handyman and home repairs in Wolverhampton. Clean, tidy and fairly priced.">
+    <title>Giraffe Property Services | Handyman in Wolverhampton</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <style>
         html { scroll-behavior: smooth; }
         .giraffe-gradient { background: linear-gradient(135deg, #f39c12 0%, #d35400 100%); }
         .service-card:hover { border-color: #f39c12; transform: translateY(-2px); }
-        .logo-img { height: 50px; width: auto; object-fit: contain; }
-        
-        /* The Faded Watermark Effect */
         .watermark-bg {
             position: absolute;
             top: 50%;
@@ -21,151 +18,213 @@
             transform: translate(-50%, -45%);
             font-size: 40rem;
             font-weight: 900;
-            color: rgba(243, 156, 18, 0.05); /* Extremely faded orange */
+            color: rgba(243, 156, 18, 0.05);
             user-select: none;
             z-index: 0;
             pointer-events: none;
         }
     </style>
 </head>
+
 <body class="bg-gray-50 text-gray-900 font-sans">
 
-    <nav class="fixed w-full z-50 bg-white shadow-sm border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="#" class="flex items-center gap-3">
-                <!--<div id="logo-fallback" class="h-10 w-10 giraffe-gradient rounded flex items-center justify-center text-white font-black text-xl shadow-sm">G</div>
-                <img src="logo.png" alt="GPS Logo" onload="document.getElementById('logo-fallback').style.display='none'" onerror="this.style.display='none'" class="logo-img">-->
-                
-                <div class="flex flex-col">
-                    <span class="text-xl font-black tracking-tighter text-orange-600 uppercase leading-none">
-                        GIRAFFE <span class="text-gray-800">PROPERTY SERVICES</span>
-                    </span>
-                    <span class="text-[9px] font-bold tracking-[0.2em] text-gray-400 uppercase mt-1">Elevating Standards</span>
-                </div>
-            </a>
-            <div class="hidden md:flex items-center space-x-8 font-bold text-xs uppercase tracking-widest">
-                <a href="#services" class="hover:text-orange-600 transition">Services</a>
-                <a href="#why-us" class="hover:text-orange-600 transition">Why Us</a>
-                <a href="tel:07378868686" class="text-orange-600 transition">07378 868686</a>
-                <a href="#contact" class="bg-orange-600 text-white px-5 py-2 rounded shadow hover:bg-orange-700 transition">Request a Quote</a>
-            </div>
+<!-- NAVIGATION -->
+<nav class="fixed w-full z-50 bg-white shadow-sm border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+        <div class="flex flex-col">
+            <span class="text-xl font-black tracking-tighter text-orange-600 uppercase leading-none">
+                GIRAFFE <span class="text-gray-800">PROPERTY SERVICES</span>
+            </span>
+            <span class="text-[9px] font-bold tracking-[0.2em] text-gray-400 uppercase mt-1">
+                Reliable • Tidy • Done Properly
+            </span>
         </div>
-    </nav>
 
-    <header class="relative pt-32 pb-20 md:pt-48 md:pb-40 px-6 text-center bg-white border-b border-gray-100 overflow-hidden">
-        <div class="watermark-bg uppercase tracking-tighter">G</div>
-        
-        <div class="max-w-5xl mx-auto relative z-10">
-            <h1 class="text-4xl md:text-7xl font-black mb-6 tracking-tighter text-gray-900 uppercase">
-                Reliable Property Maintenance for <span class="text-orange-600">Wolverhampton & West Midlands</span>
-            </h1>
-            <p class="text-lg md:text-xl mb-10 text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
-                Specializing in reactive repairs and planned upkeep across Wolverhampton & the West Midlands. Focused on reducing void periods and protecting property ROI.
-            </p>
-            <a href="#contact" class="inline-block giraffe-gradient text-white px-12 py-5 rounded font-black uppercase tracking-widest shadow-xl hover:opacity-90 transition transform hover:scale-105">
-                Submit Quote Request
+        <div class="hidden md:flex items-center space-x-8 font-bold text-xs uppercase tracking-widest">
+            <a href="#services" class="hover:text-orange-600 transition">Services</a>
+            <a href="#why-us" class="hover:text-orange-600 transition">Why Choose Us</a>
+            <a href="tel:07378868686" class="text-orange-600">07378 868686</a>
+            <a href="#contact" class="bg-orange-600 text-white px-5 py-2 rounded shadow hover:bg-orange-700 transition">
+                Get a Quote
             </a>
         </div>
-    </header>
+    </div>
 
-    <section id="services" class="py-24 px-6 bg-gray-50">
-        <div class="max-w-7xl mx-auto text-left">
-            <h2 class="text-3xl font-black uppercase mb-12 tracking-tight border-l-8 border-orange-600 pl-6 text-gray-800">Professional Services</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-white p-8 border border-gray-100 rounded-sm service-card transition duration-300">
-                    <h3 class="font-bold text-orange-600 mb-2 uppercase tracking-wide">Reactive Maintenance</h3>
-                    <p class="text-sm text-gray-500">Fast-response structural and fabric repairs to resolve urgent tenant issues quickly.</p>
-                </div>
-                <div class="bg-white p-8 border border-gray-100 rounded-sm service-card transition duration-300">
-                    <h3 class="font-bold text-orange-600 mb-2 uppercase tracking-wide">Pre/Post Tenancy Refurb</h3>
-                    <p class="text-sm text-gray-500">Efficient refreshes and repairs to ensure properties are 'let-ready' with minimal downtime.</p>
-                </div>
-                <div class="bg-white p-8 border border-gray-100 rounded-sm service-card transition duration-300">
-                    <h3 class="font-bold text-orange-600 mb-2 uppercase tracking-wide">Minor Plumbing & Electrical</h3>
-                    <p class="text-sm text-gray-500">Handling leaks, tap replacements, and fixture upgrades with transparent reporting.</p>
-                </div>
-                <div class="bg-white p-8 border border-gray-100 rounded-sm service-card transition duration-300">
-                    <h3 class="font-bold text-orange-600 mb-2 uppercase tracking-wide">Internal Decorating</h3>
-                    <p class="text-sm text-gray-500">Professional painting and wall finishing tailored for high-standard rental portfolios.</p>
-                </div>
-                <div class="bg-white p-8 border border-gray-100 rounded-sm service-card transition duration-300">
-                    <h3 class="font-bold text-orange-600 mb-2 uppercase tracking-wide">Planned Maintenance</h3>
-                    <p class="text-sm text-gray-500">Scheduled upkeep to prevent costly emergency repairs and maintain property condition.</p>
-                </div>
-                <div class="bg-white p-8 border border-gray-100 rounded-sm service-card transition duration-300">
-                    <h3 class="font-bold text-orange-600 mb-2 uppercase tracking-wide">Site Audits & Repairs</h3>
-                    <p class="text-sm text-gray-500">Fabric inspections and reactive handyman tasks to support local letting agents.</p>
-                </div>
-            </div>
+    <!-- MOBILE CALL BAR -->
+    <div class="md:hidden flex justify-center py-2 bg-orange-600">
+        <a href="tel:07378868686" class="text-white font-bold text-sm tracking-widest">
+            CALL 07378 868686
+        </a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<header class="relative pt-32 pb-20 md:pt-48 md:pb-40 px-6 text-center bg-white border-b border-gray-100 overflow-hidden">
+    <div class="watermark-bg uppercase tracking-tighter">G</div>
+
+    <div class="max-w-5xl mx-auto relative z-10">
+        <h1 class="text-4xl md:text-6xl font-black mb-6 tracking-tighter text-gray-900 uppercase">
+            Reliable Handyman & Home Repairs in 
+            <span class="text-orange-600">Wolverhampton</span>
+        </h1>
+
+        <p class="text-lg md:text-xl mb-8 text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
+            Local handyman services for homeowners and landlords. From small repairs to full room refreshes — clean, reliable and fairly priced.
+        </p>
+
+        <div class="flex flex-col md:flex-row justify-center gap-4 text-sm font-bold uppercase tracking-widest text-gray-600 mb-10">
+            <span>✓ Small Jobs Welcome</span>
+            <span>✓ Clean & Tidy Work</span>
+            <span>✓ Fully Insured</span>
         </div>
-    </section>
 
-    <section id="why-us" class="py-24 px-6 bg-white">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-black uppercase text-center mb-16 tracking-tight">The Giraffe Standard</h2>
-            <div class="grid md:grid-cols-2 gap-x-16 gap-y-10">
-                <div class="flex items-start space-x-4">
-                    <span class="text-orange-600 font-bold text-2xl">01</span>
-                    <div>
-                        <h4 class="font-black uppercase text-sm mb-1 text-gray-800">Fully Insured</h4>
-                        <p class="text-gray-500 text-sm italic underline underline-offset-4 decoration-orange-300">Public Liability & Professional Standards.</p>
-                    </div>
-                </div>
-                <div class="flex items-start space-x-4">
-                    <span class="text-orange-600 font-bold text-2xl">02</span>
-                    <div>
-                        <h4 class="font-black uppercase text-sm mb-1 text-gray-800">Reliable Communication</h4>
-                        <p class="text-gray-500 text-sm">Clear, high-utility job reports with before/after documentation.</p>
-                    </div>
-                </div>
-                <div class="flex items-start space-x-4">
-                    <span class="text-orange-600 font-bold text-2xl">03</span>
-                    <div>
-                        <h4 class="font-black uppercase text-sm mb-1 text-gray-800">Transparent Pricing</h4>
-                        <p class="text-gray-500 text-sm">Honest, competitive rates with no status-driven markups.</p>
-                    </div>
-                </div>
-                <div class="flex items-start space-x-4">
-                    <span class="text-orange-600 font-bold text-2xl">04</span>
-                    <div>
-                        <h4 class="font-black uppercase text-sm mb-1 text-gray-800">Void Period Focus</h4>
-                        <p class="text-gray-500 text-sm">We understand that time is money for agents and landlords.</p>
-                    </div>
-                </div>
+        <a href="#contact" class="inline-block giraffe-gradient text-white px-12 py-5 rounded font-black uppercase tracking-widest shadow-xl hover:opacity-90 transition transform hover:scale-105">
+            Request a Quote
+        </a>
+    </div>
+</header>
+
+<!-- SERVICES -->
+<section id="services" class="py-24 px-6 bg-gray-50">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl font-black uppercase mb-12 tracking-tight border-l-8 border-orange-600 pl-6 text-gray-800">
+            Services We Offer
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <div class="bg-white p-8 border border-gray-100 rounded-sm service-card transition duration-300">
+                <h3 class="font-bold text-orange-600 mb-2 uppercase tracking-wide">General Repairs</h3>
+                <p class="text-sm text-gray-600">
+                    Fixing doors, damaged walls, loose fittings and everyday wear and tear around the home.
+                </p>
             </div>
-        </div>
-    </section>
 
-    <section id="contact" class="py-24 px-6 bg-gray-900 text-white">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 text-left">
+            <div class="bg-white p-8 border border-gray-100 rounded-sm service-card transition duration-300">
+                <h3 class="font-bold text-orange-600 mb-2 uppercase tracking-wide">Plumbing Jobs</h3>
+                <p class="text-sm text-gray-600">
+                    Tap replacements, leak repairs, toilet fixes and other small plumbing tasks.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 border border-gray-100 rounded-sm service-card transition duration-300">
+                <h3 class="font-bold text-orange-600 mb-2 uppercase tracking-wide">Electrical Jobs</h3>
+                <p class="text-sm text-gray-600">
+                    Light fittings, socket replacements and minor electrical work.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 border border-gray-100 rounded-sm service-card transition duration-300">
+                <h3 class="font-bold text-orange-600 mb-2 uppercase tracking-wide">Painting & Decorating</h3>
+                <p class="text-sm text-gray-600">
+                    Clean, tidy decorating for rooms, hallways and rental properties.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 border border-gray-100 rounded-sm service-card transition duration-300">
+                <h3 class="font-bold text-orange-600 mb-2 uppercase tracking-wide">End of Tenancy Repairs</h3>
+                <p class="text-sm text-gray-600">
+                    Repairs, touch-ups and refreshes to get properties ready for new tenants.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 border border-gray-100 rounded-sm service-card transition duration-300">
+                <h3 class="font-bold text-orange-600 mb-2 uppercase tracking-wide">Ongoing Maintenance</h3>
+                <p class="text-sm text-gray-600">
+                    Regular upkeep to stop small issues becoming expensive problems.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- WHY US -->
+<section id="why-us" class="py-24 px-6 bg-white">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-black uppercase text-center mb-16 tracking-tight">
+            Why Choose Giraffe Property Services?
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-x-16 gap-y-10">
+
             <div>
-                <h2 class="text-4xl font-black uppercase mb-6 tracking-tight">Request a Quote</h2>
-                <div class="space-y-4 mb-8 text-lg font-light">
-                    <p><span class="text-orange-600 font-bold">Call:</span> 07378 868686</p>
-                    <p><span class="text-orange-600 font-bold">Email:</span> info@giraffepropertyservices.co.uk</p>
-                    <p><span class="text-orange-600 font-bold">Coverage:</span> Wolverhampton & 15 Mile Radius</p>
-                </div>
-                <p class="text-gray-400 text-sm italic">Include photos of the issue below for a faster estimate.</p>
+                <h4 class="font-black uppercase text-sm mb-2 text-gray-800">
+                    Fully Insured
+                </h4>
+                <p class="text-gray-600 text-sm">
+                    Public liability cover for your peace of mind.
+                </p>
             </div>
-            
-            <form action="#" class="space-y-4">
-                <input type="text" placeholder="Your Name / Agency Name" class="w-full p-4 bg-gray-800 border border-gray-700 rounded outline-none focus:border-orange-600 text-white">
-                <input type="email" placeholder="Email Address" class="w-full p-4 bg-gray-800 border border-gray-700 rounded outline-none focus:border-orange-600 text-white">
-                <textarea placeholder="Description of work required..." class="w-full p-4 bg-gray-800 border border-gray-700 rounded outline-none focus:border-orange-600 h-32 text-white"></textarea>
-                
-                <div class="relative">
-                    <label class="block text-xs font-bold uppercase text-gray-500 mb-2 tracking-widest">Attach Photos (Optional)</label>
-                    <input type="file" class="w-full text-sm text-gray-400 file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-xs file:font-black file:uppercase file:bg-orange-600 file:text-white hover:file:bg-orange-700">
-                </div>
 
-                <button class="w-full giraffe-gradient p-4 font-black uppercase tracking-widest rounded hover:opacity-90 transition mt-4">Send Quote Request</button>
-            </form>
+            <div>
+                <h4 class="font-black uppercase text-sm mb-2 text-gray-800">
+                    Reliable & Punctual
+                </h4>
+                <p class="text-gray-600 text-sm">
+                    Turn up when promised and keep you informed.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="font-black uppercase text-sm mb-2 text-gray-800">
+                    Fair Pricing
+                </h4>
+                <p class="text-gray-600 text-sm">
+                    Straightforward quotes with no hidden surprises.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="font-black uppercase text-sm mb-2 text-gray-800">
+                    Clean & Respectful
+                </h4>
+                <p class="text-gray-600 text-sm">
+                    We treat your property like our own and leave it tidy.
+                </p>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer class="py-8 bg-black text-center border-t border-gray-800">
-        <p class="text-gray-600 text-[10px] uppercase tracking-widest">&copy; 2026 Giraffe Property Services. All Rights Reserved.</p>
-    </footer>
+<!-- CONTACT -->
+<section id="contact" class="py-24 px-6 bg-gray-900 text-white">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16">
+
+        <div>
+            <h2 class="text-4xl font-black uppercase mb-6 tracking-tight">
+                Get in Touch
+            </h2>
+
+            <div class="space-y-4 mb-8 text-lg font-light">
+                <p><span class="text-orange-600 font-bold">Call:</span> 07378 868686</p>
+                <p><span class="text-orange-600 font-bold">Email:</span> info@giraffepropertyservices.co.uk</p>
+                <p><span class="text-orange-600 font-bold">Coverage:</span> Wolverhampton & surrounding areas</p>
+            </div>
+
+            <p class="text-gray-400 text-sm">
+                Send us a message below and include photos if possible for a quicker estimate.
+            </p>
+        </div>
+
+        <form action="#" class="space-y-4">
+            <input type="text" placeholder="Your Name" class="w-full p-4 bg-gray-800 border border-gray-700 rounded outline-none focus:border-orange-600 text-white">
+            <input type="email" placeholder="Email Address" class="w-full p-4 bg-gray-800 border border-gray-700 rounded outline-none focus:border-orange-600 text-white">
+            <textarea placeholder="Tell us what needs doing..." class="w-full p-4 bg-gray-800 border border-gray-700 rounded outline-none focus:border-orange-600 h-32 text-white"></textarea>
+            <button class="w-full giraffe-gradient p-4 font-black uppercase tracking-widest rounded hover:opacity-90 transition">
+                Send Message
+            </button>
+        </form>
+
+    </div>
+</section>
+
+<footer class="py-8 bg-black text-center border-t border-gray-800">
+    <p class="text-gray-600 text-[10px] uppercase tracking-widest">
+        &copy; 2026 Giraffe Property Services. All Rights Reserved.
+    </p>
+</footer>
 
 </body>
 </html>
